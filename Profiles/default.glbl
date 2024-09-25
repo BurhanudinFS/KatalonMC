@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'C:\\Program Files (x86)\\MC310801\\MediConnect2\\MediConnect2.exe'</initValue>
+      <name>MC</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
