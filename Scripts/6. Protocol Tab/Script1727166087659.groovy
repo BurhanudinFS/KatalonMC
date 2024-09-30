@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Windows.startApplicationWithTitle(GlobalVariable.MC, '')
+Windows.startApplication(GlobalVariable.MC, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(5.00)
 
@@ -29,7 +29,7 @@ Windows.setText(findWindowsObject('Object Repository/main/Protocol Tab/Editing c
 
 Windows.sendKeys(findWindowsObject('Object Repository/main/Protocol Tab/Add Medication'), Keys.chord(Keys.ENTER))
 
-Windows.click(findWindowsObject('main/Protocol Tab/Dosage-value row 1'))
+Windows.doubleClick(findWindowsObject('main/Protocol Tab/Dosage-value row 1'))
 
 Windows.setText(findWindowsObject('main/Protocol Tab/Dosage-value row 1'), '10.00')
 
@@ -54,10 +54,6 @@ Windows.click(findWindowsObject('Object Repository/main/Protocol Tab/Add event')
 Windows.setText(findWindowsObject('Object Repository/main/Protocol Tab/Editing control-Event'), 'TEE')
 
 Windows.sendKeys(findWindowsObject('Object Repository/main/Protocol Tab/Editing control-Event'), Keys.chord(Keys.ENTER))
-
-Windows.click(findWindowsObject('main/Protocol Tab/Dosage-value row 1'))
-
-Windows.setText(findWindowsObject('main/Protocol Tab/Dosage-value row 1'), '30.00')
 
 Windows.click(findWindowsObject('Object Repository/main/Protocol Tab/Save'))
 

@@ -23,13 +23,17 @@ Windows.click(findWindowsObject('main/Administrative OP-Daten/Administrative OP-
 
 Windows.doubleClick(findWindowsObject('main/Administrative OP-Daten/Radiobutton-Allergies-No'))
 
+Windows.click(findWindowsObject('main/Administrative OP-Daten/CheckBox-Nuchtern'))
+
 Windows.doubleClick(findWindowsObject('main/Administrative OP-Daten/CheckBox-Nuchtern'))
 
 Windows.click(findWindowsObject('main/Administrative OP-Daten/Parameterubernahme Hamodynamik-No'))
 
-Windows.click(findWindowsObject('main/Administrative OP-Daten/Systolischer Bludtruck mmHg'))
+Windows.doubleClick(findWindowsObject('main/Administrative OP-Daten/Parameterubernahme Hamodynamik-No'))
 
-Windows.setText(findWindowsObject('main/Administrative OP-Daten/Systolischer Bludtruck mmHg'), '100')
+Windows.doubleClick(findWindowsObject('main/Administrative OP-Daten/Systolischer_Bludtruk_mmhg'))
+
+Windows.setText(findWindowsObject('main/Administrative OP-Daten/Systolischer_Bludtruk_mmhg'), '100')
 
 Windows.click(findWindowsObject('main/Administrative OP-Daten/Herzfrequenz Schlage-min'))
 

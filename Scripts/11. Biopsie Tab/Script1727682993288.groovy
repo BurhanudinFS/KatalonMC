@@ -17,23 +17,25 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.delay(15.000)
+Windows.startApplication(GlobalVariable.MC)
 
-Windows.startApplicationWithTitle(GlobalVariable.MC, '')
+Windows.click(findWindowsObject('main/Biopsie Tab/Biopsie Tab'))
 
-/*if(Windows.waitForElementNotPresent(findWindowsObject('Object Repository/main/Patient/Table/Patient ID row 2'),60,FailureHandling.OPTIONAL))
-	{
-		GlobalVariable.isError =true
-		Windows.callTestCase(findTestCase('1. Login'), [:], FailureHandling.STOP_ON_FAILURE)
-		
-	}*/
-Windows.click(findWindowsObject('Object Repository/main/Patient/Table/Patient ID row 2'))
+Windows.doubleClick(findWindowsObject('main/Biopsie Tab/RadioButton-Biopsie-Yes'))
 
-Windows.click(findWindowsObject('Object Repository/main/Create order'))
+Windows.doubleClick(findWindowsObject('main/Biopsie Tab/ComboBox-Ort der Biopsie'))
 
-Windows.click(findWindowsObject('Object Repository/main/Herzkatheter 2024'))
+Windows.setText(findWindowsObject('main/Biopsie Tab/ComboBox-Ort der Biopsie'), 'RV')
 
-Windows.delay(5.000)
+Windows.doubleClick(findWindowsObject('main/Biopsie Tab/Anzahl'))
 
-Windows.click(findWindowsObject('Object Repository/main/Start new workflow'))
+Windows.setText(findWindowsObject('main/Biopsie Tab/Anzahl'), '123')
+
+Windows.doubleClick(findWindowsObject('main/Biopsie Tab/ComboBox-Versendung'))
+
+Windows.setText(findWindowsObject('main/Biopsie Tab/ComboBox-Versendung'), 'Test ABC')
+
+Windows.click(findWindowsObject('main/Biopsie Tab/CheckBox-Transradial'))
+
+Windows.click(findWindowsObject('main/Biopsie Tab/Generate FInding Text'))
 

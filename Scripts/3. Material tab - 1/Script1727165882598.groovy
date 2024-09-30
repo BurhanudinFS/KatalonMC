@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Windows.startApplicationWithTitle(GlobalVariable.MC, '')
+Windows.startApplication(GlobalVariable.MC, FailureHandling.STOP_ON_FAILURE)
 
 Windows.delay(5.00)
 
