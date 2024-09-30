@@ -6,7 +6,7 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'C:\\Program Files\\MediConnect2\\MediConnect2.exe'</initValue>
+      <initValue>'C:\\Program Files (x86)\\MediConnect2\\MediConnect2.exe'</initValue>
       <name>MC</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

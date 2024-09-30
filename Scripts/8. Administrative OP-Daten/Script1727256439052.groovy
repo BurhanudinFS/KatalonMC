@@ -65,3 +65,4 @@ Windows.click(findWindowsObject('main/Administrative OP-Daten/Dauer'))
 
 Windows.setText(findWindowsObject('main/Administrative OP-Daten/Dauer'), '10')
 
+Windows.click(findWindowsObject('Object Repository/main/Herzkatether 2024/Save and Close'))

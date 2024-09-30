@@ -54,10 +54,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>97a15934-ed24-4619-924c-bb8f7cd630df</guid>
+      <guid>652b0ddd-078c-4cb2-b2c4-d1f4b2be0d5b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/7. Haemodynamic Tab</testCaseId>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/8. Administrative OP-Daten</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
