@@ -19,11 +19,11 @@ import org.openqa.selenium.Keys as Keys
 
 Windows.startApplication(GlobalVariable.MC)
 
-Windows.click(findWindowsObject('main/Administrative OP-Daten/Administrative OP-Daten'))
+Windows.click(findWindowsObject('main/Administrative OP-Daten/Administrative OP-daten Tab'))
 
-Windows.click(findWindowsObject('main/Administrative OP-Daten/Allergies-No'))
+Windows.doubleClick(findWindowsObject('main/Administrative OP-Daten/Radiobutton-Allergies-No'))
 
-Windows.click(findWindowsObject('main/Administrative OP-Daten/Nuchtern-checkbox'))
+Windows.doubleClick(findWindowsObject('main/Administrative OP-Daten/CheckBox-Nuchtern'))
 
 Windows.click(findWindowsObject('main/Administrative OP-Daten/Parameterubernahme Hamodynamik-No'))
 
@@ -66,3 +66,4 @@ Windows.click(findWindowsObject('main/Administrative OP-Daten/Dauer'))
 Windows.setText(findWindowsObject('main/Administrative OP-Daten/Dauer'), '10')
 
 Windows.click(findWindowsObject('Object Repository/main/Herzkatether 2024/Save and Close'))
+
