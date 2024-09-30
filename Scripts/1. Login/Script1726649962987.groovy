@@ -10,20 +10,39 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+
+import dev.failsafe.internal.util.Assert
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 Windows.startApplicationWithTitle(GlobalVariable.MC, '')
 
-Windows.setText(findWindowsObject('User name'), 'mc2')
+if(GlobalVariable.isError)
+{
+	if(Windows.waitForElementPresent(findWindowsObject('Object Repository/main/PopUpError/TextBoxError'),60,FailureHandling.OPTIONAL)) {
+		GlobalVariable.Message = Windows.getText(findWindowsObject('Object Repository/main/PopUpError/TextBoxError'))
+		KeywordUtil.markError(GlobalVariable.Message)
+		
+	}
+	
+	
+}else {
+	
+	Windows.setText(findWindowsObject('User name'), 'mc2')
+	
+	Windows.doubleClick(findWindowsObject('Password'))
+	
+	Windows.setText(findWindowsObject('Password'), 'MC2_admin')
+	Windows.click(findWindowsObject('Login'))
+}
 
-Windows.doubleClick(findWindowsObject('Password'))
 
-Windows.setText(findWindowsObject('Password'), 'MC2_admin')
 
-Windows.click(findWindowsObject('Login'))
+
+
 

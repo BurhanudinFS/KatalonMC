@@ -17,17 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.delay(5.00)
+Windows.delay(5.00)
 
-Windows.startApplicationWithTitle('C:\\Program Files (x86)\\MC310801\\MediConnect2\\MediConnect2.exe', '')
+Windows.startApplicationWithTitle(GlobalVariable.MC, '')
 
-Windows.click(findWindowsObject('main/Patient ID row 1'))
+Windows.click(findWindowsObject('main/Patient/Table/Patient ID row 1'))
 
 Windows.click(findWindowsObject('Object Repository/main/Create order'))
 
 Windows.click(findWindowsObject('Object Repository/main/Herzkatheter 2024'))
 
-WebUI.delay(5.000)
+Windows.delay(5.000)
 
 Windows.click(findWindowsObject('Object Repository/main/Start new workflow'))
 

@@ -6,7 +6,37 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'C:\\Program Files (x86)\\MC310801\\MediConnect2\\MediConnect2.exe'</initValue>
+      <initValue>'C:\\Program Files\\MediConnect2\\MediConnect2.exe'</initValue>
       <name>MC</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>' '</initValue>
+      <name>Message</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>30</initValue>
+      <name>WaitingTime</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>130</initValue>
+      <name>waitingErrorMessageLogin</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>false</initValue>
+      <name>isError</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>false</initValue>
+      <name>isFailed</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>' '</initValue>
+      <name>FileName</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

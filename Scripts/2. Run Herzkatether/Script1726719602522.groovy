@@ -19,15 +19,22 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.delay(5.00)
 
-Windows.startApplicationWithTitle('C:\\Program Files (x86)\\MC310801\\MediConnect2\\MediConnect2.exe', '')
-
-Windows.click(findWindowsObject('Object Repository/main/Patient ID row 2'))
+Windows.startApplicationWithTitle(GlobalVariable.MC, '')
+/*if(Windows.waitForElementNotPresent(findWindowsObject('Object Repository/main/Patient/Table/Patient ID row 2'),60,FailureHandling.OPTIONAL))
+	{
+		GlobalVariable.isError =true
+		Windows.callTestCase(findTestCase('1. Login'), [:], FailureHandling.STOP_ON_FAILURE)
+		
+	}*/
+Windows.click(findWindowsObject('Object Repository/main/Patient/Table/Patient ID row 2'))
 
 Windows.click(findWindowsObject('Object Repository/main/Create order'))
 
 Windows.click(findWindowsObject('Object Repository/main/Herzkatheter 2024'))
 
-WebUI.delay(5.000)
+Windows.delay(5.000)
 
 Windows.click(findWindowsObject('Object Repository/main/Start new workflow'))
+
+
 
